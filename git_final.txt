@@ -29,10 +29,15 @@ git checkout <branch_name> : move to the particular branch
 git merge <branch_name> (-m "msg") : to merge branches
 git push origin <branch_name> : push to GitHub
 git fetch: fetch the changes from the remote
-git merge : merge the changes  bring by fetch
+git merge : merge the changes  bring by fetch - after the main branch
+git rebase : merge before the main branch
 git pull: git fetch + git merge 
 git restore : used to restore the previous staged version
 git stash : temporarily change branch without commit our work in another branch
 git stash pop : to retore the content stored in the stashed state
 git reset : take back to specific commit state - delete the new ones
 git revert : take back to specific commit state - without delete the new ones
+
+git remote add <r-name> <url>: to add from remote to repo
+git remote -v : to check the repo name
+git push -u <r-name> <branch-name>: to push all the commited changes 
