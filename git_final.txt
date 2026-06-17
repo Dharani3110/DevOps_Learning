@@ -1,0 +1,38 @@
+GitHub: global environment - multi-user environment 
+
+git: tool to track what, when, whom changed - keeps version - local environment
+-> local: own computer
+-> remote: cloud - github
+
+stage: my works are done  
+commit: save in the local repo
+main/master branch: project central OS - act like inheritance concept - main is the parent cls of all other branches
+merged : combine two branch (like frontend branch and main branch, backend branch and main branch)
+push : local changes to remote
+fetch : remote changes to local , but not merge them
+pull : fetch + merge
+
+git clone <HTTP-URL> : to clone a repo 
+git init : to initialize the git
+git status : to check the status of the file
+git add --all : to stage all the modification in the files ( used to stage files in the entire project - all folder)
+git add . : used to stage all the changes in the current dir
+git add * : stage the new/ modified files - not the deleted one
+git add <file-name>/ *.txt : stage the specific file/ files with specific extension
+git reset : to undo the staged files back to working dir
+git commit -m "<msg>" : to commit everything 
+git reset HEAD~ : used to undo the commit 
+git log (--oneline): show commit log
+git branch : ls the branches name
+git branch <branch_name> : creates new branch 
+git checkout <branch_name> : move to the particular branch
+git merge <branch_name> (-m "msg") : to merge branches
+git push origin <branch_name> : push to GitHub
+git fetch: fetch the changes from the remote
+git merge : merge the changes  bring by fetch
+git pull: git fetch + git merge 
+git restore : used to restore the previous staged version
+git stash : temporarily change branch without commit our work in another branch
+git stash pop : to retore the content stored in the stashed state
+git reset : take back to specific commit state - delete the new ones
+git revert : take back to specific commit state - without delete the new ones
