@@ -1,0 +1,104 @@
+=> set : -x : gives the cmd in the output , -e : to exit when error occurs, -o : exits when pipe cmd error  
+=> df / free : to check memory
+=> nproc: cpu
+=> awk -F" " '{print $col_no}' 
+=> curl 
+=> wget: to download
+=> find / -name <name-file>
+
+BASIC:
+-> The term "shell" refers to a program that provides a command-line interface for interacting with an operating system
+-> !#/usr/bin/bash - sheBang -  tells the shell to execute it via bash shell - /usr/bin/bash - path to bash shell (which bash)
+-> bash, sh ./ - to execute
+-> echo (-e: include escape seq \n, \t) - output, read (read NAME - shell to varb NAME) - input
+-> read -p "Enter filename: " FILE : echo + read
+-> NAME="Gurudharani" - variables , no space , no def , no dt
+-> $NAME - reference of the variable
+-> $(cmd) - combine multiple commands
+-> echo $? - to check success - 0 = Success, non-negative = Failure
+----------------------------------------------------------------------
+
+CONDITIONS:
+| Operator      | Meaning               |
+| --------      | --------------------- |
+| `-eq` , =     | equal                 |
+| `-ne` , ! =   | not equal             |
+| `-gt`         | greater than          |
+| `-lt`         | less than             |
+| `-ge`         | greater than or equal |
+| `-le`         | less than or equal    |
+|  &&           | AND Operator for logic|
+|  ||           | OR Operator for logic|
+
+-----
+
+if [ condition ]
+then
+    command1
+else
+    command2
+fi
+
+-----
+
+if [ "$NAME" = "guru" ]
+then
+    echo "Welcome"
+fi
+
+-----
+-> nested if-else, elif also supported
+-----
+SWITCH:
+read -p "Enter option: " CHOICE
+
+case $CHOICE in
+    1)
+        echo "Start"
+        ;;
+    2)
+        echo "Stop"
+        ;;
+    3)
+        echo "Restart"
+        ;;
+    *)
+        echo "Invalid"
+        ;;
+esac
+
+| Symbol | Meaning                    |
+| ------ | -------------------------- |
+| `case` | Start switch block         |
+| `;;`   | End case                   |
+| `*)`   | Default case               |
+| `esac` | End case (reverse of case) |
+
+-----------------------------------------------------------------------------------
+
+CONDITIONAL CHECKS:
+| Operator | Meaning             |
+| -------- | ------------------- |
+| `-f`     | regular file exists |
+| `-d`     | directory exists    |
+| `-r`     | readable            |
+| `-w`     | writable            |
+| `-x`     | executable          |
+
+--------------------------------------------------------------------------
+
+LOOPS:
+for variable in values
+do
+   commands
+done
+
+for ((i=1;i<=5;i++)) / i in {1..5}
+do
+   echo $i
+done
+
+while [ condition ]
+do
+   commands
+done
