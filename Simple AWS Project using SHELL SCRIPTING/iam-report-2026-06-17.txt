@@ -1,0 +1,14 @@
+AWS IAM REPORT
+Generated on Wed Jun 17 07:45:26 PM IST 2026
+
+===== IAM USERS =====
+terraform_hands_on
+
+===== ACCESS KEYS =====
+User: terraform_hands_on
+------------------------------------
+|          ListAccessKeys          |
++-----------------------+----------+
+|  AKIATNVEVOOONVPTJ74T |  Active  |
++-----------------------+----------+
+
