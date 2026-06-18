@@ -1,0 +1,8 @@
+[webservers]
+
+<server-public-ip>
+
+[webservers:vars]
+
+ansible_user=ubuntu
+ansible_ssh_private_key_file=<key-file>
